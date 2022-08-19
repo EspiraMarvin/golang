@@ -59,12 +59,17 @@ var (
 )
 
 var I int = 27
+var t int = 34
 
 func main() {
 	// var i int /* var, name of variable, type of variable */ // variable that is declared but not assigned
 	// i = 44    //shortcut                                   // assigning a variable
 	// var j float32 = 27
 	// k := 99.
+
+	var t int = 88
+	t = 66
+	fmt.Println("T", t)
 
 	var i int = 42
 	// i := 13  you can;t declare variables twice in the same scope
