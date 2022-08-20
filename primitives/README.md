@@ -62,12 +62,12 @@
 
  #### 3. Text types
 1. strings - alias for an utf8
-- Collection of UTF-8 x-characters
+- Collection of UTF-8 x-characters/ made up of sequence of bytes
 - They're immutable
 - Can be concatenated with plus(+) operator
 - Can be converted to []byte
 
-2. Rune - represents any utf32 characters
+2. Rune - represents any utf32 characters/ store code that represetns unitcode x-cters
 - alias for int32
 - special methods normally required to process eg strings.Reader#ReadRune
 
