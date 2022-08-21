@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-// USECASE: data/form input validation
+// USECASE: data/form input validation to pass data to validation logic
 type Animal struct {
 	Name   string `required max:"100"`
 	Origin string
