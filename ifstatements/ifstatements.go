@@ -26,12 +26,13 @@ func main() {
 
 	// simple number guessing game
 	number := 50
-	guess := 30
-	if guess < 1 || guess > 100 {
-		fmt.Println("The guess must be between 1 and 100!")
-	}
+	guess := 105
 
-	if guess >= 1 && returnTrue() && guess <= 100 {
+	if guess < 1 {
+		fmt.Println("The guess must be greater than 1!")
+	} else if guess > 100 {
+		fmt.Println("The guess must be less than 100!")
+	} else {
 		if guess < number {
 			fmt.Println("Too low")
 		}
@@ -43,13 +44,18 @@ func main() {
 		}
 	}
 
-	fmt.Println(number <= guess, number >= guess, number != guess, number == guess)
-	fmt.Println(number < guess, number > guess)
-	fmt.Println(!false, !true)
-
 }
 
-// short circuiting
+// short circuiting - if any part of an OR returns true Go doesn't execute any remaining part of the OR condition
+/* eg.
+ if guess < 1 || returnTrue() || guess > 100 {
+	fmt.Println("The guess must be between 1 and 100!")
+ }
+
+ if guess is less than 1 say -5, Go stops executing the remaining OR conditions since it has gotten a one true condition
+
+*/
+
 func returnTrue() bool {
 	fmt.Println("returning true")
 	return true
