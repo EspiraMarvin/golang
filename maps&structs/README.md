@@ -7,10 +7,33 @@
 1. via literals
 -----
     statePopulations := map[[]int]string{}
+
+    eg.
+    statePopulations := map[[]int]string{
+        "California":   39250017,
+		"Texas":        27862596,
+		"Florida":      20612439,
+		"New York":     19745289,
+		"Pennsylvania": 12802503,
+		"Illinois":     12801539,
+		"Ohio":         11614373,
+    }
 -----
 2. via the make function
 ------
 	statePopulations := make(map[string]int)
+
+    eg.
+    statePopulations := make(map[string]int)
+	statePopulations = map[string]int{int
+		"California":   39250017,
+		"Texas":        27862596,
+		"Florida":      20612439,
+		"New York":     19745289,
+		"Pennsylvania": 12802503,
+		"Illinois":     12801539,
+		"Ohio":         11614373,
+	}
 ------
 
 ##### - Manipulation 
