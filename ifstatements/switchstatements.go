@@ -44,7 +44,7 @@ func main() {
 	switch i.(type) {
 	case int:
 		fmt.Println("i is an int")
-		break
+		break // breaking out early
 		fmt.Println("This will not print")
 	case float64:
 		fmt.Println("i is a float64")
