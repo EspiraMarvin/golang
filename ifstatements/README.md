@@ -16,10 +16,9 @@
     !false
     &&
     ||
-
-
-
 -----
+
+- Note: you should not test to see if 2 floating numbers are equal to one another
 
 ##### NOTES:
 - short-circuiting 
