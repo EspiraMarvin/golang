@@ -5,6 +5,7 @@ import (
 	"reflect"
 )
 
+// USECASE: data/form input validation
 type Animal struct {
 	Name   string `required max:"100"`
 	Origin string
