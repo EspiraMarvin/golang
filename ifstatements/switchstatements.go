@@ -14,7 +14,7 @@ func main() {
 		fmt.Println("not one or two")
 	}
 
-	// another example with tags eg. i
+	// another example with tags/ another name for a variable eg. i
 	switch i := 2 + 3; i {
 	case 1, 5, 10: // falling through/ testings multiple cases
 		fmt.Println("one, five or ten")
