@@ -13,7 +13,7 @@ func main() {
 
 	// WE CAN CHANGE THIS BEHAVIOUR USING POINTERS TO make b point to the same memory as a here
 	// here we use c & d, we make d point to the same memory as c,
-	// using address and operator(&) to get the memory address where the variable data is stored
+	// using addressof operator(&) to get the memory address where the variable data is stored
 	// and dereferencing operators(*) to get the data store in the memory address
 
 	var c int = 42
