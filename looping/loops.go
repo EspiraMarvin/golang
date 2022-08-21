@@ -109,7 +109,7 @@ Loop:
 	fmt.Println("-------------")
 
 	// Eg. maps
-	statePopulations := map[string]int{ // key type string // value of type int
+	statePopulations := map[string]int{
 		"California":   39250017,
 		"Texas":        27862596,
 		"Florida":      20612439,
