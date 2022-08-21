@@ -10,7 +10,4 @@
 #### Working with nil 
 
 #### Types with internal pointers
-
-
-
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                               
