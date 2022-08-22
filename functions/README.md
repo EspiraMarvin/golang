@@ -98,6 +98,33 @@
 
 ##### Functions as types
 - Can assign functions to variables or use as arguments and return values in functions
-- Type signature
+- Type signature is like function signature, with no parameter names
+
+---------
+      var f func(string, string, int) (int, error)
+---------
+
+ eg.
+
+  ---------
+	var divide func(float64, float64) (float64, error)
+	divide = func(a, b float64) (float64, error) {
+		if b == 0.0 {
+			return 0.0, fmt.Errorf("Cannot divide by zero")
+		} else {
+			return a / b, nil
+		}
+	}
+	d, err := divide(5.0, 0.0)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println(d)
+ ---------
+    
+
 ##### Methods
+
+-
 
