@@ -43,5 +43,5 @@
 
 #### Types with internal pointers
 - All assignments operations in Go are copy operations
-- Slices & Maps contain internal pointers, so copies point to same underlying data
+- Slices & Maps contain internal pointers, so copies point to same underlying data, therefore you don't need to pass pointers when working with them
                                                                                                                                                                                                                                                                                                                                                                                                                                                                
