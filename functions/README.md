@@ -44,7 +44,33 @@
  ---------
 
 ##### Return values
+- Single return values just list type
 
+-------
+    func foo() int
+-------
+
+- multiple return value list types surrounded by parantheses
+
+--------
+    func foo() (int, error) // returns an integer and an error
+--------
+
+###### Named return values
+
+- Initializes returned variable to 0
+- Return using return keyword on its own
+
+-------
+
+func sum2(values ...int) (result int) { // (result int) is a named return value
+	fmt.Println(values)
+	for _, v := range values {
+		result += v
+	}
+	return
+}
+-------
 ##### Anonymous FUNCTIONS
 
 ##### Functions as types
