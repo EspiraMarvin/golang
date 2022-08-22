@@ -126,5 +126,78 @@
 
 ##### Methods
 
--
+- Functions that execute in context of a type
+
+Syntax
+ -----------
+    func (g greater) greet() {
+        ....
+    }
+    // g is the receiver for the method / its a value receiver, it gets the copy of the greeter object then passed into the greet method
+     // above: Syntax - with value receivers
+ -----------
+
+- Receivers can be value or pointer
+   - Value receiver gets copy of type
+   - Pointer receiver gets pointer type
+
+
+Syntax - with value receivers
+
+ -----------
+
+    package main
+
+    import (
+        "fmt"
+    )
+
+    func main() {
+        g := greeter{
+            greeting: "Hello",
+            name:     "Go",
+        }
+        g.greet()
+        fmt.Println("The new name is:", g.name)
+    }
+
+    type greeter struct {
+        greeting string
+        name     string
+    }
+
+
+    func (g greeter) greet() { // g greeter gets a copy of the struct
+        fmt.Println(g.greeting, g.name)
+     }
+
+ -----------
+
+Syntax - with pointer receivers
+
+ -----------
+
+    package main
+    import  "fmt"
+
+    func main() {
+        g := greeter{
+            greeting: "Hello",
+            name:     "Go",
+        }
+        g.greet()
+        fmt.Println("The new name is:", g.name)
+    }
+
+    type greeter struct {
+        greeting string
+        name     string
+    }
+
+    func (g *greeter) greet() { 
+        fmt.Println(g.greeting, g.name)
+    }
+
+ -----------
+
 
