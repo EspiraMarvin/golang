@@ -63,17 +63,41 @@
 
 -------
 
-func sum2(values ...int) (result int) { // (result int) is a named return value
-	fmt.Println(values)
-	for _, v := range values {
-		result += v
-	}
-	return
-}
+    func sum2(values ...int) (result int) { // (result int) is a named return value
+        fmt.Println(values)
+        for _, v := range values {
+            result += v
+        }
+        return
+    }
 -------
-##### Anonymous FUNCTIONS
+
+###### Can return addresses of local variables
+- Automatically promoted from local memory(stack) to shared memory(heap)
+
+
+##### Anonymous Functions
+
+-Immediately invoked function syntax 
+
+----------
+    func() {
+      ....
+    }()
+----------
+
+-Assigned to a variable or passed as an argument to a function syntax 
+----------
+        a := func() {
+           ....
+        }
+        a()
+
+        In this syntax a function can only be invoked after it has been declared
+----------
 
 ##### Functions as types
-
+- Can assign functions to variables or use as arguments and return values in functions
+- Type signature
 ##### Methods
 
