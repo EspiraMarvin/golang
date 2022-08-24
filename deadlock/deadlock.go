@@ -12,7 +12,29 @@ func NewCollection() Collection {
 		Data: make(map[string]string),
 	}
 }
+
 func (c *Collection) Has(key string) bool {
 	c.Mutex.Lock()
 	defer c.Mutex.Unlock()
+
+	if _, ok := c.Data[key]; ok {
+		return true
+	}
+	return false
+}
+
+func (c *Collection) Add(key, value string) bool {
+	c.Mutex.Lock()
+	defer c.Mutex.Unlock()
+
+	if _, ok := c.Data[key]; ok {
+		return true
+	}
+	c.Data[key] = value
+}
+
+func main() {
+	c := NewCollection()
+	c.Add("a", "cake")
+
 }
