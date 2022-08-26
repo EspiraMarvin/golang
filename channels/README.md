@@ -43,7 +43,7 @@
 ### For-range loops with channels
 - Use to monitor channel and process messages as they arrive
 - Loop exits when channel is closed
-
+- first value you receive from a for-range loop is the value itself and not the index like in the for-range loops over slices, arrays and maps
 ### Select statements
 - Allow goroutines to monitor several channels at once
 - Blocks if all channels block
