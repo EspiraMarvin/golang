@@ -27,7 +27,8 @@ eg
 - Use `sync.WaitGroup` to wait for groups of goroutins to complete
 - `Wait` method blocks the goroutine that is called on until the wait groups is completed
 - `Done` method lets the WaitGroup know that one of the goroutine is completed its work
-#### WaitGroups
+#### WaitGroups 
+- WaitGroups synchronize goroutines together, to make sure that our main routine to wait all of our other to goroutines finish
 ------------
         package main
         import (
