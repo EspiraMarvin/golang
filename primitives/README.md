@@ -36,6 +36,10 @@
   ###### Arithmetic Operations
   - AND (&), OR (|), XOR/exclusive or (^), AND NOT (&^)
 
+   ------------
+    About bit shifting, if you have a number 9 (1001 in binary) and bit shift by 2 to the left (9 << 2) you just add two zeros at the end of number 9 (100100) and you get a number 36. Similar for the >> operator, you just add n zeros to the beginning.
+   -------------
+
 ###### MORE NOTES:
 - Zero value for any integer type is 0 - when you initialize an integer type and don't assign a value, that's will be equivalent to 0
 -  You can't mix types in same family (uint16 + uint32 = error)
@@ -71,3 +75,6 @@
 - alias for int32
 - special methods normally required to process eg strings.Reader#ReadRune
 
+
+
+####
