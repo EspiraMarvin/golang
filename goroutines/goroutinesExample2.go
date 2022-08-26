@@ -12,7 +12,6 @@ var m = sync.RWMutex{}
 
 func main() {
 	runtime.GOMAXPROCS(100) // no of threads to run on
-	// fmt.Printf("threads: %v\n", runtime.GOMAXPROCS(100))
 	for i := 0; i < 10; i++ {
 		wg.Add((2))
 		m.RLock()
