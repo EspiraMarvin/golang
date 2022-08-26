@@ -72,6 +72,9 @@ eg. implementation
 
 #### Implementing with values vs. pointers
 
+- method set of value is all methods with value receivers
+- method set of pointer is all methods regardles of receiver type
+
 #### Interfaces best practices
 - use many small interfaces versus large monolithic ones
   - single method interfaces are some of the most powerful and flexible
